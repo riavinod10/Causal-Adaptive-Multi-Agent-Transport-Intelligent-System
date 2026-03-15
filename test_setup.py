@@ -5,6 +5,7 @@ Verify all dependencies and data files
 
 import sys
 import os
+from camatis.config import TRAIN_FILE, TEST_FILE
 
 def test_imports():
     """Test if all required packages are installed"""
@@ -48,8 +49,8 @@ def test_data_files():
     print("\nTesting data files...")
     
     files = [
-        'data/train_engineered.csv',
-        'data/test_engineered.csv'
+        TRAIN_FILE,
+        TEST_FILE
     ]
     
     failed = []
@@ -75,8 +76,8 @@ def test_data_loading():
     try:
         import pandas as pd
         
-        train_df = pd.read_csv('data/train_engineered.csv')
-        test_df = pd.read_csv('data/test_engineered.csv')
+        train_df = pd.read_csv(TRAIN_FILE)
+        test_df = pd.read_csv(TEST_FILE)
         
         print(f"  ✓ Train data: {train_df.shape}")
         print(f"  ✓ Test data: {test_df.shape}")

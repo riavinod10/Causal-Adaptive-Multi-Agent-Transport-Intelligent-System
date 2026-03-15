@@ -6,10 +6,11 @@ Causal-Adaptive Multi-Agent Transport Intelligence System
 import os
 
 # Paths
-DATA_DIR = "data"
-MODELS_DIR = "camatis/models_saved"
-RESULTS_DIR = "camatis/results"
-LOGS_DIR = "camatis/logs"
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+MODELS_DIR = os.path.join(BASE_DIR, "camatis", "models_saved")
+RESULTS_DIR = os.path.join(BASE_DIR, "camatis", "results")
+LOGS_DIR = os.path.join(BASE_DIR, "camatis", "logs")
 
 # Create directories
 for dir_path in [MODELS_DIR, RESULTS_DIR, LOGS_DIR]:

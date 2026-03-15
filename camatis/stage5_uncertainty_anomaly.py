@@ -116,6 +116,11 @@ class AnomalyDetector:
         joblib.dump(self.isolation_forest, f"{MODELS_DIR}/anomaly_detector.pkl")
         print("Anomaly detector saved!")
 
+    def load_detector(self):
+        """Load trained anomaly detector"""
+        self.isolation_forest = joblib.load(f"{MODELS_DIR}/anomaly_detector.pkl")
+        print("Anomaly detector loaded!")
+
 class UncertaintyAnomalyPipeline:
     def __init__(self):
         self.uncertainty_engine = UncertaintyEngine()
@@ -137,6 +142,28 @@ class UncertaintyAnomalyPipeline:
         high_uncertainty = self.uncertainty_engine.identify_high_uncertainty_samples(confidence_intervals)
         
         # Detect anomalies
+        anomaly_results = self.anomaly_detector.detect_anomalies(X_test)
+        
+        return {
+            'uncertainty_predictions': uncertainty_preds,
+            'confidence_intervals': confidence_intervals,
+            'high_uncertainty_mask': high_uncertainty,
+            'anomaly_results': anomaly_results
+        }
+    
+    def process_inference(self, X_test, dl_trainer):
+        """Run uncertainty + anomaly detection without retraining"""
+        
+        # Load trained anomaly detector
+        self.anomaly_detector.load_detector()
+        
+        print("Computing uncertainty estimates...")
+        uncertainty_preds = dl_trainer.predict_with_uncertainty(X_test)
+        
+        confidence_intervals = self.uncertainty_engine.compute_confidence_intervals(uncertainty_preds)
+        
+        high_uncertainty = self.uncertainty_engine.identify_high_uncertainty_samples(confidence_intervals)
+        
         anomaly_results = self.anomaly_detector.detect_anomalies(X_test)
         
         return {

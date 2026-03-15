@@ -124,6 +124,16 @@ class MetaEnsemble:
         joblib.dump(self.meta_models, f"{MODELS_DIR}/meta_models.pkl")
         print("Ensemble models saved!")
     
+
+    def load_models(self):
+        """Load saved ensemble models for inference"""
+        
+        self.lgb_models = joblib.load(f"{MODELS_DIR}/lgb_models.pkl")
+        self.catboost_models = joblib.load(f"{MODELS_DIR}/catboost_models.pkl")
+        self.meta_models = joblib.load(f"{MODELS_DIR}/meta_models.pkl")
+        
+        print("Ensemble models loaded successfully!")
+
     def evaluate(self, y_true, y_pred):
         """Evaluate predictions"""
         metrics = {
