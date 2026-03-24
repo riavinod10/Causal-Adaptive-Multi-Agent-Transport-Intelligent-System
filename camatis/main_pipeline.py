@@ -14,7 +14,7 @@ from camatis.stage2_causal_features import CausalFeatureEngine
 from camatis.stage3_deep_learning import DeepLearningTrainer
 from camatis.stage4_meta_ensemble import MetaEnsemble
 from camatis.stage5_uncertainty_anomaly import UncertaintyAnomalyPipeline
-from camatis.stage6_optimization import MultiObjectiveOptimizer
+from camatis.optimization.stage6_optimization import MultiObjectiveOptimizer
 from camatis.stage7_simulation import ScenarioSimulator
 from camatis.evaluation import ModelEvaluator
 

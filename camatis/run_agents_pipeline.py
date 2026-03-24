@@ -18,6 +18,7 @@ from camatis.stage3_deep_learning import DeepLearningTrainer
 from camatis.stage4_meta_ensemble import MetaEnsemble
 from camatis.stage5_uncertainty_anomaly import UncertaintyAnomalyPipeline
 from camatis.agents.agent_manager import AgentManager
+from camatis.optimization.decision_optimizer import DecisionOptimizer
 
 from camatis.execution.action_engine import TransportState, ExecutionEngine
 
@@ -91,7 +92,25 @@ class CAMATISDecisionPipeline:
         )
 
       
+        # -----------------------------------
+# OPTIMIZATION LAYER (NEW)
+# -----------------------------------
 
+        optimizer = DecisionOptimizer()
+
+        # Convert decisions → route map
+        route_actions = {}
+
+        for d in decisions:
+            route = d["route_id"]
+            actions = d.get("actions", [d.get("action", "No Action")])
+            route_actions.setdefault(route, []).extend(actions)
+
+        optimized = optimizer.optimize_actions(
+            route_ids=list(route_actions.keys()),
+            predictions=final_predictions,
+            agent_outputs=route_actions
+        )
         # --------------------------------------------------
 # ACTION EXECUTION LAYER (ADD HERE)
 # --------------------------------------------------
@@ -103,16 +122,23 @@ class CAMATISDecisionPipeline:
 
         print("\nExecuting Actions...\n")
 
-        for i, d in enumerate(decisions):
+        print("\nExecuting Optimized Actions...\n")
 
-            route_id = d["route_id"]
+        for route, plan in optimized.items():
 
-            # NEW: handle multi-actions safely
-            actions = d.get("actions", [d.get("action", "No Action")])
+            print(f"\nRoute {route} Optimization:")
 
-            demand = final_predictions['passenger_demand'][i]
+            freq = plan["frequency_multiplier"]
+            buses = plan["buses_to_add"]
+            reroute = plan["reroute_to"]
 
-            engine.execute(route_id, actions, demand)
+            print(f"→ Frequency Multiplier: {round(freq,2)}x")
+            print(f"→ Buses to Add: {buses}")
+
+            if reroute is not None:
+                print(f"→ Reroute to: Route {reroute}")
+           
+            engine.execute_optimized(route, plan)
 
         print(f"\nAgent decisions generated: {len(decisions)}")
         print("\nSample Decisions:")

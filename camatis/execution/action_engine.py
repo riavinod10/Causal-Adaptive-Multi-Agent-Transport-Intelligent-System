@@ -43,3 +43,21 @@ class ExecutionEngine:
             elif action == "High Demand Risk":
 
                 print(f"Route {route_id} → Demand Risk Warning")
+                
+    def execute_optimized(self, route_id, plan):
+
+        freq = plan["frequency_multiplier"]
+        buses = plan["buses_to_add"]
+
+        if buses > 0:
+            self.state.route_buses[route_id] = \
+                self.state.route_buses.get(route_id, 1) + buses
+
+            print(f"Route {route_id} → 🚍 +{buses} buses")
+
+        if freq > 1.0:
+            self.state.headway[route_id] = int(15 / freq)
+            print(f"Route {route_id} → 🔁 Frequency updated")
+
+        if plan["reroute_to"] is not None:
+            print(f"Route {route_id} → 🔀 Rerouted to {plan['reroute_to']}")

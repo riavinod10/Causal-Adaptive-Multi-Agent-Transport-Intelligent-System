@@ -24,12 +24,12 @@ class TransportOptimizationProblem(Problem):
         self.causal_constraints = causal_constraints
         
         # Decision variables: bus frequency adjustments per route
-        n_routes = 50  # Simplified
+        n_routes = len(self.predictions['passenger_demand'])  # Simplified
         
         super().__init__(
             n_var=n_routes,
             n_obj=4,
-            n_constr=2,
+            n_constr=0,  # No constraints
             xl=0.5,  # Min frequency multiplier
             xu=2.0   # Max frequency multiplier
         )
@@ -51,12 +51,6 @@ class TransportOptimizationProblem(Problem):
         fairness = -self._compute_fairness(X)
         
         out["F"] = np.column_stack([waiting_time, fuel_cost, utilization, fairness])
-        
-        # Constraints
-        g1 = X.sum(axis=1) - 100  # Total frequency constraint
-        g2 = -X.sum(axis=1) + 50  # Minimum service constraint
-        
-        out["G"] = np.column_stack([g1, g2])
     
     def _compute_waiting_time(self, X):
         """Compute average waiting time"""
