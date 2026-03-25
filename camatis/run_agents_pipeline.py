@@ -41,6 +41,19 @@ class CAMATISDecisionPipeline:
         # Load data
         # --------------------------------------------------
         train_df, test_df = self.data_loader.load_data()
+        from camatis.stage2_causal_features import CausalFeatureEngine
+
+        causal_engine = CausalFeatureEngine()
+
+        # Build causal graph
+        causal_engine.build_causal_graph()
+
+        # Learn relationships
+        causal_engine.learn_causal_relationships(train_df)
+
+        # Generate counterfactual features
+        
+        test_df = causal_engine.generate_counterfactual_features(test_df)
 
         X_train, X_test, y_train, y_test, feature_names = \
             self.data_loader.prepare_features(train_df, test_df)
@@ -106,11 +119,25 @@ class CAMATISDecisionPipeline:
             actions = d.get("actions", [d.get("action", "No Action")])
             route_actions.setdefault(route, []).extend(actions)
 
+       # 🔥 MERGE ML + UNCERTAINTY
+        merged_predictions = {
+            **final_predictions,
+            **uncertainty_results['uncertainty_predictions'],
+            "cf_load_diff": test_df["cf_load_diff"].values,
+            "cf_speed_diff": test_df["cf_speed_diff"].values
+        }
+
         optimized = optimizer.optimize_actions(
-            route_ids=list(route_actions.keys()),
-            predictions=final_predictions,
+            route_ids=test_df["route_id"].values,
+            predictions=merged_predictions,
             agent_outputs=route_actions
         )
+
+        
+   
+   
+    
+
         # --------------------------------------------------
 # ACTION EXECUTION LAYER (ADD HERE)
 # --------------------------------------------------
@@ -167,7 +194,10 @@ def main():
     route_summary = {}
 
     for route, acts in route_actions.items():
-        route_summary[route] = Counter(acts).most_common(1)[0][0]
+        if len(acts) > 0:
+            route_summary[route] = Counter(acts).most_common(1)[0][0]
+        else:
+            route_summary[route] = "No Action"
 
     print("\nRoute-Level Decisions:")
     for r, a in list(route_summary.items())[:10]:

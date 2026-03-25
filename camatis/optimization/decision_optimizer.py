@@ -14,10 +14,11 @@ class DecisionOptimizer:
 # -----------------------------------
 
         unique_routes = list(set(route_ids))
-
+        
         reduced_predictions = {
             "passenger_demand": [],
-            "load_factor": []
+            "load_factor": [],
+            "demand_std": []  
         }
 
         for route in unique_routes:
@@ -31,10 +32,14 @@ class DecisionOptimizer:
             reduced_predictions["load_factor"].append(
                 np.mean(predictions['load_factor'][indices])
             )
+            reduced_predictions["demand_std"].append(
+                np.mean(predictions['demand_std'][indices])
+            )
 
         # Convert to numpy arrays
         reduced_predictions["passenger_demand"] = np.array(reduced_predictions["passenger_demand"])
         reduced_predictions["load_factor"] = np.array(reduced_predictions["load_factor"])
+        reduced_predictions["demand_std"] = np.array(reduced_predictions["demand_std"])
 
         # Run NSGA-III
         results = self.optimizer.optimize(reduced_predictions)
@@ -46,6 +51,7 @@ class DecisionOptimizer:
         optimized_actions = {}
 
         for i, route in enumerate(unique_routes):
+            indices = np.where(route_ids == route)[0]
 
             actions = agent_outputs.get(route, [])
 
@@ -54,41 +60,70 @@ class DecisionOptimizer:
                 "buses_to_add": 0,
                 "reroute_to": None
             }
+            action_types = actions
 
             # 🚍 Fleet logic
-            if "Allocate Extra Bus" in actions:
+            if "Allocate Extra Bus" in action_types:
 
-                demand = reduced_predictions['passenger_demand'][i]
-                capacity = 50
+                expected_load = reduced_predictions['load_factor'][i]
 
-                required = int(np.ceil(demand / capacity))
-                route_plan["buses_to_add"] = required
+                if expected_load > 0.9:
+                    route_plan["buses_to_add"] = 2
+                elif expected_load > 0.75 and expected_load<0.9:
+                    route_plan["buses_to_add"] = 1
 
             # 🔁 Frequency logic
-            if "Increase Frequency" in actions:
+            if "Increase Frequency" in action_types:
 
-                route_plan["frequency_multiplier"] = min(
-                    2.0,
-                    route_plan["frequency_multiplier"] * 1.2
-                )
+                cf_impact = np.mean(predictions['cf_speed_diff'][indices])
+
+                if cf_impact > 2:   # big improvement
+                    route_plan["frequency_multiplier"] *= 1.3
 
             # 🛣️ Rerouting logic
-            if "High Demand Risk" in actions:
+            if "High Demand Risk" in action_types:
 
-                alt_route = self.find_alternate_route(route, predictions)
+    # 🔥 Causal feature
+                cf_load_reduction = np.mean(predictions['cf_load_diff'][indices])
 
-                route_plan["reroute_to"] = alt_route
+                # Only reroute if causal improvement exists
+                if cf_load_reduction > 0.02:
+
+                    alt_route = self.find_alternate_route(
+                        route,
+                        reduced_predictions,
+                        unique_routes
+                    )
+
+                    route_plan["reroute_to"] = alt_route
 
             optimized_actions[route] = route_plan
 
         return optimized_actions
 
-    def find_alternate_route(self, route, predictions):
+    def find_alternate_route(self, route, reduced_predictions, unique_routes):
 
-        loads = predictions['load_factor']
+        loads = reduced_predictions['load_factor']
 
-        for i, l in enumerate(loads):
-            if l < 0.5:
-                return i
+        best_score = float("inf")
+        best_route = None
 
-        return None
+        for i, candidate in enumerate(unique_routes):
+
+            if candidate == route:
+                continue
+
+            # fake distance (since no coords)
+            #FIX THIS ADD COORDINATES IN DATASET!!!!!!
+            distance = abs(route - candidate)
+
+            load = loads[i]
+
+            # weighted score
+            score = 0.6 * distance + 0.4 * load
+
+            if score < best_score:
+                best_score = score
+                best_route = candidate
+
+        return best_route

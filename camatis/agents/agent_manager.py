@@ -25,7 +25,7 @@ class AgentManager:
                 anomaly_mask):
 
         decisions = []
-
+        
         for i in range(len(route_ids)):
 
             demand = float(demand_mean[i])
@@ -42,9 +42,12 @@ class AgentManager:
             if is_anomaly:
                 decisions.append({
                     "route_id": route_ids[i],
-                    "action": "Investigate Anomaly"
+                    "actions": ["Investigate Anomaly"],  # 🔥 FIX
+                    "demand": demand,
+                    "load": load
                 })
                 continue
+                
 
             actions.append(self.demand_agent.evaluate(demand, load, prob_high))
             actions.append(self.fleet_agent.allocate(load, load_unc))
@@ -52,15 +55,21 @@ class AgentManager:
 
             final_action = self.supervisor.resolve(actions)
 
-            if final_action:
+            if final_action and len(final_action) > 0:
                 decisions.append({
                     "route_id": route_ids[i],
-                    "actions": [a["action"] for a in final_action]
+                    "actions": [a["action"] for a in final_action],  # 🔥 FIX
+                    "demand": demand,
+                    "load": load,
+                    "demand_uncertainty": demand_unc,
+                    "load_uncertainty": load_unc
                 })
             else:
                 decisions.append({
                     "route_id": route_ids[i],
-                    "actions": ["No Action"]
+                    "actions": ["No action"],
+                    "demand": demand,
+                    "load": load
                 })
 
         return decisions

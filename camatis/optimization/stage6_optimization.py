@@ -31,7 +31,7 @@ class TransportOptimizationProblem(Problem):
             n_obj=4,
             n_constr=0,  # No constraints
             xl=0.5,  # Min frequency multiplier
-            xu=2.0   # Max frequency multiplier
+            xu = 1.6   # Max frequency multiplier
         )
     
     def _evaluate(self, X, out, *args, **kwargs):
@@ -53,19 +53,33 @@ class TransportOptimizationProblem(Problem):
         out["F"] = np.column_stack([waiting_time, fuel_cost, utilization, fairness])
     
     def _compute_waiting_time(self, X):
-        """Compute average waiting time"""
-        # Simplified: inversely proportional to frequency
-        return np.mean(1.0 / (X + 0.1), axis=1) * 10
-    
+
+        demand = self.predictions['passenger_demand']
+
+        # ✅ ADD THIS LINE (uncertainty)
+        uncertainty = self.predictions.get(
+            'demand_std',
+            np.zeros_like(demand)
+        )
+
+        # ✅ UPDATED FORMULA
+        return np.mean(
+            (demand / (X + 0.1)) * (1 + uncertainty),
+            axis=1
+        )
+        
+
     def _compute_fuel_cost(self, X):
-        """Compute fuel cost"""
-        # Linear with frequency
-        return np.sum(X * 1.5, axis=1)
-    
+
+        demand = self.predictions['passenger_demand']
+
+        return np.sum((X ** 2) * demand * 0.1, axis=1)
+        
     def _compute_utilization(self, X):
-        """Compute fleet utilization"""
-        # Higher frequency -> better utilization (up to a point)
-        return np.mean(np.minimum(X, 1.5), axis=1)
+
+        load = self.predictions['load_factor']
+
+        return np.mean(load * X, axis=1)
     
     def _compute_fairness(self, X):
         """Compute service fairness (minimize variance)"""
