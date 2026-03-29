@@ -30,10 +30,13 @@ class AgentManager:
 
             demand = float(demand_mean[i])
             load = float(load_mean[i])
+           
             util_class = int(utilization[i])
             demand_unc = float(demand_std[i])
             load_unc = float(load_std[i])
             prob_high = float(cls_probs[i][2])
+            if i < 50:  # Check first 50 routes
+                print(f"[DEBUG] Route {route_ids[i]}: demand={demand:.1f}, load={load:.3f}, prob_high={prob_high:.3f}, util={util_class}")
 
             is_anomaly = anomaly_mask[i]
 
