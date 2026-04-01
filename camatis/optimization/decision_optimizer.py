@@ -1,15 +1,35 @@
 import numpy as np
+import sys
+import os
 from camatis.optimization.stage6_optimization import MultiObjectiveOptimizer
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from backend.services.config_service import config_service
 
 class DecisionOptimizer:
 
     def __init__(self):
         self.optimizer = MultiObjectiveOptimizer()
 
+    
     def optimize_actions(self, route_ids, predictions, agent_outputs):
         print("\n" + "="*70)
         print(" OPTIMIZATION LAYER - RESOURCE ALLOCATION")
         print("="*70)
+        
+        # Load current settings
+        try:
+            config = config_service.get_config()
+            max_buses = config.max_buses
+            freq_limit = config.frequency_limit
+            opt_pref = config.optimization_preference
+        except:
+            max_buses = 30
+            freq_limit = 12
+            opt_pref = "balanced"
+        
+        print(f"[SETTINGS] Max buses per route: {max_buses}")
+        print(f"[SETTINGS] Frequency limit: {freq_limit} buses/hour (base 4)")
+        print(f"[SETTINGS] Optimization preference: {opt_pref}")
         
         unique_routes = list(set(route_ids))
         
@@ -36,43 +56,65 @@ class DecisionOptimizer:
         reduced_predictions["load_factor"] = np.array(reduced_predictions["load_factor"])
         reduced_predictions["demand_std"] = np.array(reduced_predictions["demand_std"])
 
-        # Run NSGA-III
+        # Set NSGA-III weights based on preference
+        if opt_pref == "cost":
+            preference_weights = np.array([0.5, 0.3, 0.1, 0.1])
+            print("[OPT] Cost minimization mode - prioritizing fuel efficiency")
+        elif opt_pref == "demand":
+            preference_weights = np.array([0.1, 0.1, 0.6, 0.2])
+            print("[OPT] Demand coverage mode - prioritizing passenger service")
+        elif opt_pref == "efficiency":
+            preference_weights = np.array([0.2, 0.2, 0.5, 0.1])
+            print("[OPT] Efficiency mode - prioritizing utilization")
+        else:  # balanced
+            preference_weights = np.array([0.25, 0.25, 0.25, 0.25])
+            print("[OPT] Balanced mode - equal weights")
+        
+        # Pass weights to optimizer
+        self.optimizer.preference_weights = preference_weights
         results = self.optimizer.optimize(reduced_predictions)
         best = self.optimizer.get_best_solution()
         freq_solution = best['solution']
 
         optimized_actions = {}
-
+        
         print("\n📊 Calculating Route Optimizations:")
+        total_buses_added = 0
         
         for i, route in enumerate(unique_routes):
             indices = np.where(route_ids == route)[0]
             actions = agent_outputs.get(route, [])
             
             hourly_demand = reduced_predictions['passenger_demand'][i]
-            load_factor = reduced_predictions['load_factor'][i]
+            load_factor = reduced_predictions['load_factor'][i] 
+            current_buses = 1  # Base is 1 bus per route
             
-            # Dynamic bus allocation based on demand
+            # Dynamic bus allocation based on demand (capped by max_buses)
             if hourly_demand > 400:
-                buses_to_add = 3
+                buses_to_add = min(3, max_buses - current_buses)
             elif hourly_demand > 250:
-                buses_to_add = 2
+                buses_to_add = min(2, max_buses - current_buses)
             elif hourly_demand > 120:
-                buses_to_add = 1
+                buses_to_add = min(1, max_buses - current_buses)
             else:
                 buses_to_add = 0
             
             # Override if agent flagged for allocation
             if "Allocate Extra Bus" in actions:
-                buses_to_add = max(buses_to_add, 2)
+                buses_to_add = min(max(buses_to_add, 2), max_buses - current_buses)
+            
+            # Apply frequency limit (base frequency is 4)
+            base_freq = 4
+            freq_multiplier = min(freq_solution[i], freq_limit / base_freq)
             
             route_plan = {
-                "frequency_multiplier": freq_solution[i],
+                "frequency_multiplier": freq_multiplier,
                 "buses_to_add": buses_to_add,
                 "reroute_to": None,
-                "reroute_buses_count": 0,  # How many buses to move
+                "reroute_buses_count": 0,
                 "reroute_reason": None
             }
+            
             
             # REROUTING LOGIC: Move buses from overloaded routes to underloaded ones
             # Condition 1: Route has High Demand Risk AND load factor > 0.8

@@ -1,11 +1,11 @@
 [
   {
     "route_id": 2,
-    "demand_after": 221.3,
-    "waiting_passengers": 11.0,
+    "demand_after": 210.39,
+    "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
     "frequency_multiplier": 1.57,
     "buses_added": 2,
@@ -20,7 +20,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.44,
+    "frequency_multiplier": 1.58,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -28,14 +28,14 @@
   },
   {
     "route_id": 5,
-    "demand_after": 228.5,
-    "waiting_passengers": 11.0,
+    "demand_after": 176.65,
+    "waiting_passengers": 8.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.45,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -43,17 +43,17 @@
   },
   {
     "route_id": 7,
-    "demand_after": 177.32,
-    "waiting_passengers": 8.0,
+    "demand_after": 194.2,
+    "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
-    "rerouted_to": 109,
+    "rerouted_to": 342,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -63,12 +63,12 @@
     "waiting_passengers": 12.0,
     "actions": [
       "High Demand Risk",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.53,
     "buses_added": 2,
-    "rerouted_to": 2,
+    "rerouted_to": 255,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -78,12 +78,12 @@
     "waiting_passengers": 16.0,
     "actions": [
       "Increase Frequency",
-      "High Demand Risk",
-      "No action",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -94,10 +94,10 @@
     "demand_after": 352.84,
     "waiting_passengers": 17.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.47,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -108,10 +108,10 @@
     "demand_after": 384.03,
     "waiting_passengers": 19.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.6,
+    "frequency_multiplier": 1.53,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -122,10 +122,10 @@
     "demand_after": 443.15,
     "waiting_passengers": 22.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.2,
+    "frequency_multiplier": 1.45,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -136,10 +136,10 @@
     "demand_after": 196.82,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.48,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -150,11 +150,11 @@
     "demand_after": 359.07,
     "waiting_passengers": 17.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.37,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -165,10 +165,10 @@
     "demand_after": 263.25,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.4,
+    "frequency_multiplier": 1.47,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -179,11 +179,11 @@
     "demand_after": 241.65,
     "waiting_passengers": 12.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.47,
+    "frequency_multiplier": 1.54,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -195,12 +195,12 @@
     "waiting_passengers": 9.0,
     "actions": [
       "Increase Frequency",
-      "High Demand Risk",
-      "No action",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.49,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -211,12 +211,12 @@
     "demand_after": 399.36,
     "waiting_passengers": 19.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.45,
+    "frequency_multiplier": 1.49,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -227,8 +227,8 @@
     "demand_after": 439.02,
     "waiting_passengers": 21.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
     "frequency_multiplier": 1.58,
     "buses_added": 2,
@@ -241,10 +241,10 @@
     "demand_after": 198.87,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.48,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -255,10 +255,10 @@
     "demand_after": 200.52,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.43,
+    "frequency_multiplier": 1.51,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -269,10 +269,10 @@
     "demand_after": 201.69,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.51,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -283,10 +283,10 @@
     "demand_after": 200.67,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.44,
+    "frequency_multiplier": 1.45,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -297,11 +297,11 @@
     "demand_after": 200.95,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.39,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -312,12 +312,12 @@
     "demand_after": 208.56,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.49,
+    "frequency_multiplier": 1.54,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -328,10 +328,10 @@
     "demand_after": 251.81,
     "waiting_passengers": 12.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.48,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -342,8 +342,8 @@
     "demand_after": 328.73,
     "waiting_passengers": 16.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
     "frequency_multiplier": 1.58,
     "buses_added": 2,
@@ -356,10 +356,10 @@
     "demand_after": 352.37,
     "waiting_passengers": 17.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.47,
+    "frequency_multiplier": 1.05,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -371,11 +371,11 @@
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -386,10 +386,10 @@
     "demand_after": 199.21,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.35,
+    "frequency_multiplier": 1.36,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -400,12 +400,12 @@
     "demand_after": 200.43,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.5,
+    "frequency_multiplier": 1.44,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -418,7 +418,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.29,
+    "frequency_multiplier": 1.36,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -429,11 +429,11 @@
     "demand_after": 199.69,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
       "Increase Frequency",
-      "Investigate Anomaly"
+      "Investigate Anomaly",
+      "No action"
     ],
-    "frequency_multiplier": 1.3,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -444,12 +444,12 @@
     "demand_after": 206.74,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.37,
+    "frequency_multiplier": 1.34,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -460,10 +460,10 @@
     "demand_after": 248.76,
     "waiting_passengers": 12.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.45,
+    "frequency_multiplier": 1.39,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -474,12 +474,12 @@
     "demand_after": 327.04,
     "waiting_passengers": 16.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.24,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -490,10 +490,10 @@
     "demand_after": 349.5,
     "waiting_passengers": 17.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.45,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -504,10 +504,10 @@
     "demand_after": 193.93,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.42,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -518,10 +518,10 @@
     "demand_after": 196.37,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.5,
+    "frequency_multiplier": 1.3,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -532,10 +532,10 @@
     "demand_after": 197.44,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.47,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -546,11 +546,11 @@
     "demand_after": 196.37,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.54,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -561,8 +561,8 @@
     "demand_after": 196.51,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
     "frequency_multiplier": 1.46,
     "buses_added": 2,
@@ -575,12 +575,12 @@
     "demand_after": 203.1,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -591,10 +591,10 @@
     "demand_after": 243.13,
     "waiting_passengers": 12.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.34,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -605,11 +605,11 @@
     "demand_after": 297.6,
     "waiting_passengers": 14.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.52,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -621,12 +621,12 @@
     "waiting_passengers": 8.0,
     "actions": [
       "Increase Frequency",
-      "No action",
-      "High Demand Risk",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.51,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -637,11 +637,11 @@
     "demand_after": 217.43,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "No action"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -649,15 +649,15 @@
   },
   {
     "route_id": 61,
-    "demand_after": 175.55,
-    "waiting_passengers": 8.0,
+    "demand_after": 202.62,
+    "waiting_passengers": 10.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.45,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -669,11 +669,11 @@
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.42,
+    "frequency_multiplier": 1.5,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -685,12 +685,12 @@
     "waiting_passengers": 19.0,
     "actions": [
       "Increase Frequency",
-      "High Demand Risk",
-      "No action",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.19,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -701,10 +701,10 @@
     "demand_after": 454.39,
     "waiting_passengers": 22.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -715,10 +715,10 @@
     "demand_after": 201.32,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -730,11 +730,11 @@
     "waiting_passengers": 10.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.4,
+    "frequency_multiplier": 1.6,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -746,12 +746,12 @@
     "waiting_passengers": 10.0,
     "actions": [
       "Increase Frequency",
-      "High Demand Risk",
-      "No action",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -763,12 +763,12 @@
     "waiting_passengers": 11.0,
     "actions": [
       "Increase Frequency",
-      "High Demand Risk",
-      "No action",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.23,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -779,10 +779,10 @@
     "demand_after": 291.13,
     "waiting_passengers": 14.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.34,
+    "frequency_multiplier": 1.39,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -794,10 +794,10 @@
     "waiting_passengers": 12.0,
     "actions": [
       "High Demand Risk",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.46,
+    "frequency_multiplier": 1.53,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -810,7 +810,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.3,
+    "frequency_multiplier": 1.4,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -822,12 +822,12 @@
     "waiting_passengers": 16.0,
     "actions": [
       "Increase Frequency",
-      "No action",
-      "High Demand Risk",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -838,10 +838,10 @@
     "demand_after": 397.33,
     "waiting_passengers": 19.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
     "frequency_multiplier": 1.59,
     "buses_added": 2,
@@ -854,11 +854,11 @@
     "demand_after": 459.76,
     "waiting_passengers": 22.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.5,
+    "frequency_multiplier": 1.16,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -870,12 +870,12 @@
     "waiting_passengers": 16.0,
     "actions": [
       "Increase Frequency",
-      "No action",
-      "High Demand Risk",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.37,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -887,11 +887,11 @@
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -904,7 +904,7 @@
     "actions": [
       "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -915,10 +915,10 @@
     "demand_after": 198.69,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -929,10 +929,10 @@
     "demand_after": 305.66,
     "waiting_passengers": 15.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.18,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -943,12 +943,12 @@
     "demand_after": 405.37,
     "waiting_passengers": 20.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.51,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -959,10 +959,10 @@
     "demand_after": 446.52,
     "waiting_passengers": 22.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.45,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -973,10 +973,10 @@
     "demand_after": 189.39,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Investigate Anomaly"
+      "Investigate Anomaly",
+      "No action"
     ],
-    "frequency_multiplier": 1.31,
+    "frequency_multiplier": 1.5,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -987,11 +987,11 @@
     "demand_after": 184.81,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.15,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1002,10 +1002,10 @@
     "demand_after": 184.47,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1016,12 +1016,12 @@
     "demand_after": 187.58,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.32,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1032,10 +1032,10 @@
     "demand_after": 300.14,
     "waiting_passengers": 15.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.48,
+    "frequency_multiplier": 1.3,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1046,11 +1046,11 @@
     "demand_after": 401.56,
     "waiting_passengers": 20.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.44,
+    "frequency_multiplier": 1.52,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1061,10 +1061,10 @@
     "demand_after": 443.35,
     "waiting_passengers": 22.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1072,15 +1072,15 @@
   },
   {
     "route_id": 103,
-    "demand_after": 234.45,
-    "waiting_passengers": 11.0,
+    "demand_after": 175.56,
+    "waiting_passengers": 8.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.5,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1091,10 +1091,10 @@
     "demand_after": 196.84,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.51,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1107,7 +1107,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.29,
+    "frequency_multiplier": 1.58,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -1119,11 +1119,11 @@
     "waiting_passengers": 10.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.48,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1134,10 +1134,10 @@
     "demand_after": 457.57,
     "waiting_passengers": 22.0,
     "actions": [
-      "No action",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.38,
+    "frequency_multiplier": 1.17,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1145,11 +1145,11 @@
   },
   {
     "route_id": 108,
-    "demand_after": 212.38,
-    "waiting_passengers": 10.0,
+    "demand_after": 175.56,
+    "waiting_passengers": 8.0,
     "actions": [
-      "No action",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "No action"
     ],
     "frequency_multiplier": 1.54,
     "buses_added": 2,
@@ -1159,13 +1159,13 @@
   },
   {
     "route_id": 109,
-    "demand_after": 206.84,
-    "waiting_passengers": 10.0,
+    "demand_after": 228.95,
+    "waiting_passengers": 11.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.52,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1176,11 +1176,11 @@
     "demand_after": 175.55,
     "waiting_passengers": 8.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.44,
+    "frequency_multiplier": 1.27,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1191,10 +1191,10 @@
     "demand_after": 175.56,
     "waiting_passengers": 8.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.16,
+    "frequency_multiplier": 1.51,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1206,11 +1206,11 @@
     "waiting_passengers": 8.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.43,
+    "frequency_multiplier": 1.54,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1218,14 +1218,14 @@
   },
   {
     "route_id": 114,
-    "demand_after": 175.55,
-    "waiting_passengers": 8.0,
+    "demand_after": 234.43,
+    "waiting_passengers": 11.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.48,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1233,13 +1233,13 @@
   },
   {
     "route_id": 115,
-    "demand_after": 205.6,
+    "demand_after": 211.42,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1251,13 +1251,13 @@
     "waiting_passengers": 7.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.44,
     "buses_added": 2,
-    "rerouted_to": 344,
+    "rerouted_to": 61,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -1266,10 +1266,10 @@
     "demand_after": 209.88,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.6,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1280,11 +1280,11 @@
     "demand_after": 261.28,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.52,
+    "frequency_multiplier": 1.5,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1296,12 +1296,12 @@
     "waiting_passengers": 14.0,
     "actions": [
       "Increase Frequency",
-      "No action",
-      "High Demand Risk",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.5,
+    "frequency_multiplier": 1.53,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1312,11 +1312,11 @@
     "demand_after": 313.91,
     "waiting_passengers": 15.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.53,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1327,10 +1327,10 @@
     "demand_after": 383.89,
     "waiting_passengers": 19.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.5,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1341,10 +1341,10 @@
     "demand_after": 440.72,
     "waiting_passengers": 22.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1355,10 +1355,10 @@
     "demand_after": 399.26,
     "waiting_passengers": 19.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.54,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1370,11 +1370,11 @@
     "waiting_passengers": 21.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.27,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1385,12 +1385,12 @@
     "demand_after": 197.84,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.41,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1415,11 +1415,11 @@
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.52,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1430,11 +1430,11 @@
     "demand_after": 268.09,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "No action"
     ],
-    "frequency_multiplier": 1.5,
+    "frequency_multiplier": 1.49,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1445,11 +1445,11 @@
     "demand_after": 365.16,
     "waiting_passengers": 18.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.38,
+    "frequency_multiplier": 1.32,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1460,10 +1460,10 @@
     "demand_after": 175.55,
     "waiting_passengers": 8.0,
     "actions": [
-      "No action",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.5,
+    "frequency_multiplier": 1.22,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1471,13 +1471,13 @@
   },
   {
     "route_id": 132,
-    "demand_after": 175.55,
-    "waiting_passengers": 8.0,
+    "demand_after": 239.96,
+    "waiting_passengers": 11.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.49,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1485,13 +1485,13 @@
   },
   {
     "route_id": 133,
-    "demand_after": 228.95,
-    "waiting_passengers": 11.0,
+    "demand_after": 208.87,
+    "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1503,11 +1503,11 @@
     "waiting_passengers": 13.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.6,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1519,10 +1519,10 @@
     "waiting_passengers": 22.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.46,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1533,10 +1533,11 @@
     "demand_after": 352.37,
     "waiting_passengers": 17.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Allocate Extra Bus",
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.49,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1547,10 +1548,10 @@
     "demand_after": 197.13,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.6,
+    "frequency_multiplier": 1.47,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1564,7 +1565,7 @@
       "High Demand Risk",
       "Allocate Extra Bus"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1575,11 +1576,11 @@
     "demand_after": 420.89,
     "waiting_passengers": 21.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.37,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1590,10 +1591,10 @@
     "demand_after": 330.08,
     "waiting_passengers": 16.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.52,
+    "frequency_multiplier": 1.45,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1604,12 +1605,12 @@
     "demand_after": 199.83,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.45,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1620,10 +1621,10 @@
     "demand_after": 197.06,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.33,
+    "frequency_multiplier": 1.21,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1635,11 +1636,11 @@
     "waiting_passengers": 20.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1650,10 +1651,10 @@
     "demand_after": 199.83,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.24,
+    "frequency_multiplier": 1.35,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1664,11 +1665,11 @@
     "demand_after": 198.91,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.54,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1679,10 +1680,10 @@
     "demand_after": 199.12,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Investigate Anomaly"
+      "Investigate Anomaly",
+      "No action"
     ],
-    "frequency_multiplier": 1.4,
+    "frequency_multiplier": 1.29,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -1693,12 +1694,12 @@
     "demand_after": 199.19,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.5,
+    "frequency_multiplier": 1.41,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1709,11 +1710,11 @@
     "demand_after": 206.41,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.25,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1724,10 +1725,10 @@
     "demand_after": 227.49,
     "waiting_passengers": 11.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.35,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1738,10 +1739,10 @@
     "demand_after": 266.98,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.42,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1752,10 +1753,10 @@
     "demand_after": 304.54,
     "waiting_passengers": 15.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.52,
+    "frequency_multiplier": 1.43,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1766,11 +1767,11 @@
     "demand_after": 322.13,
     "waiting_passengers": 16.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.51,
+    "frequency_multiplier": 1.31,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1783,7 +1784,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.42,
+    "frequency_multiplier": 1.4,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1795,10 +1796,10 @@
     "waiting_passengers": 20.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1809,10 +1810,10 @@
     "demand_after": 430.46,
     "waiting_passengers": 21.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.51,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1825,7 +1826,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.45,
+    "frequency_multiplier": 1.6,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -1836,10 +1837,10 @@
     "demand_after": 301.56,
     "waiting_passengers": 15.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.39,
+    "frequency_multiplier": 1.6,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1850,11 +1851,11 @@
     "demand_after": 318.5,
     "waiting_passengers": 15.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.36,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1865,11 +1866,11 @@
     "demand_after": 447.99,
     "waiting_passengers": 22.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.49,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1880,10 +1881,10 @@
     "demand_after": 386.41,
     "waiting_passengers": 19.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.13,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -1894,11 +1895,11 @@
     "demand_after": 219.44,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.42,
+    "frequency_multiplier": 1.51,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1909,10 +1910,10 @@
     "demand_after": 199.1,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.33,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1925,7 +1926,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.48,
+    "frequency_multiplier": 1.41,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -1937,11 +1938,11 @@
     "waiting_passengers": 11.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.4,
+    "frequency_multiplier": 1.29,
     "buses_added": 2,
     "rerouted_to": 185,
     "anomaly": false,
@@ -1953,9 +1954,9 @@
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
     "frequency_multiplier": 1.51,
     "buses_added": 2,
@@ -1968,10 +1969,10 @@
     "demand_after": 196.07,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.51,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -1982,12 +1983,12 @@
     "demand_after": 190.54,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -1998,10 +1999,10 @@
     "demand_after": 194.89,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.5,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2012,10 +2013,10 @@
     "demand_after": 194.89,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.6,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -2026,11 +2027,11 @@
     "demand_after": 196.07,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.44,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2041,11 +2042,11 @@
     "demand_after": 216.9,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2057,10 +2058,10 @@
     "waiting_passengers": 11.0,
     "actions": [
       "High Demand Risk",
-      "No action",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.49,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2068,11 +2069,11 @@
   },
   {
     "route_id": 187,
-    "demand_after": 241.92,
-    "waiting_passengers": 12.0,
+    "demand_after": 229.8,
+    "waiting_passengers": 11.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
     "frequency_multiplier": 1.6,
     "buses_added": 2,
@@ -2086,11 +2087,11 @@
     "waiting_passengers": 11.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.53,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2098,13 +2099,13 @@
   },
   {
     "route_id": 189,
-    "demand_after": 210.58,
-    "waiting_passengers": 10.0,
+    "demand_after": 229.89,
+    "waiting_passengers": 11.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.6,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2116,10 +2117,10 @@
     "waiting_passengers": 11.0,
     "actions": [
       "High Demand Risk",
-      "No action",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.38,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2130,12 +2131,12 @@
     "demand_after": 234.19,
     "waiting_passengers": 11.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2147,11 +2148,11 @@
     "waiting_passengers": 10.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.54,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2162,10 +2163,10 @@
     "demand_after": 357.64,
     "waiting_passengers": 17.0,
     "actions": [
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.35,
+    "frequency_multiplier": 1.33,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2178,7 +2179,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.39,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -2189,12 +2190,12 @@
     "demand_after": 203.64,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.52,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2205,10 +2206,10 @@
     "demand_after": 354.96,
     "waiting_passengers": 17.0,
     "actions": [
-      "No action",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.12,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2219,10 +2220,10 @@
     "demand_after": 203.46,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.49,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2234,13 +2235,13 @@
     "waiting_passengers": 15.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.38,
+    "frequency_multiplier": 1.26,
     "buses_added": 2,
-    "rerouted_to": 133,
+    "rerouted_to": 109,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -2250,11 +2251,11 @@
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.6,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2265,10 +2266,10 @@
     "demand_after": 175.91,
     "waiting_passengers": 8.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.4,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2279,10 +2280,10 @@
     "demand_after": 175.55,
     "waiting_passengers": 8.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.44,
+    "frequency_multiplier": 1.54,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2293,10 +2294,10 @@
     "demand_after": 203.53,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 0.95,
+    "frequency_multiplier": 1.5,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2307,10 +2308,10 @@
     "demand_after": 203.47,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2321,8 +2322,8 @@
     "demand_after": 313.07,
     "waiting_passengers": 15.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
     "frequency_multiplier": 1.59,
     "buses_added": 2,
@@ -2335,10 +2336,10 @@
     "demand_after": 410.26,
     "waiting_passengers": 20.0,
     "actions": [
-      "No action",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.44,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2349,9 +2350,9 @@
     "demand_after": 204.23,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
     "frequency_multiplier": 1.54,
     "buses_added": 2,
@@ -2364,12 +2365,12 @@
     "demand_after": 203.5,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.46,
+    "frequency_multiplier": 1.45,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2380,11 +2381,11 @@
     "demand_after": 315.87,
     "waiting_passengers": 15.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.47,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2395,10 +2396,10 @@
     "demand_after": 410.67,
     "waiting_passengers": 20.0,
     "actions": [
-      "No action",
-      "Investigate Anomaly"
+      "Investigate Anomaly",
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2410,10 +2411,10 @@
     "waiting_passengers": 10.0,
     "actions": [
       "High Demand Risk",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.24,
+    "frequency_multiplier": 1.44,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2424,10 +2425,10 @@
     "demand_after": 255.45,
     "waiting_passengers": 12.0,
     "actions": [
-      "No action",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2438,10 +2439,10 @@
     "demand_after": 263.66,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.38,
+    "frequency_multiplier": 1.45,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2449,13 +2450,13 @@
   },
   {
     "route_id": 217,
-    "demand_after": 175.56,
-    "waiting_passengers": 8.0,
+    "demand_after": 205.56,
+    "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.46,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2466,10 +2467,10 @@
     "demand_after": 430.61,
     "waiting_passengers": 21.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.45,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2480,8 +2481,8 @@
     "demand_after": 201.7,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
     "frequency_multiplier": 1.58,
     "buses_added": 1,
@@ -2495,12 +2496,12 @@
     "waiting_passengers": 10.0,
     "actions": [
       "Increase Frequency",
-      "No action",
-      "High Demand Risk",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.39,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2511,10 +2512,10 @@
     "demand_after": 199.25,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.29,
+    "frequency_multiplier": 1.25,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2525,12 +2526,12 @@
     "demand_after": 200.8,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.51,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2541,12 +2542,12 @@
     "demand_after": 209.29,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.6,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2557,10 +2558,10 @@
     "demand_after": 310.8,
     "waiting_passengers": 15.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.28,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2572,13 +2573,13 @@
     "waiting_passengers": 16.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.42,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
-    "rerouted_to": 103,
+    "rerouted_to": 114,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -2589,7 +2590,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.49,
+    "frequency_multiplier": 1.46,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -2597,17 +2598,17 @@
   },
   {
     "route_id": 255,
-    "demand_after": 181.33,
+    "demand_after": 188.83,
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.6,
     "buses_added": 2,
-    "rerouted_to": 7,
+    "rerouted_to": 133,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -2616,10 +2617,10 @@
     "demand_after": 177.76,
     "waiting_passengers": 8.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.55,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -2631,10 +2632,10 @@
     "waiting_passengers": 11.0,
     "actions": [
       "High Demand Risk",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.15,
     "buses_added": 2,
     "rerouted_to": 60,
     "anomaly": false,
@@ -2647,7 +2648,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.55,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -2658,11 +2659,11 @@
     "demand_after": 278.91,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.22,
+    "frequency_multiplier": 1.21,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2673,12 +2674,12 @@
     "demand_after": 420.26,
     "waiting_passengers": 21.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.37,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2690,10 +2691,10 @@
     "waiting_passengers": 8.0,
     "actions": [
       "Increase Frequency",
-      "High Demand Risk",
-      "No action",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
     "frequency_multiplier": 1.51,
     "buses_added": 2,
@@ -2706,11 +2707,11 @@
     "demand_after": 277.12,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.18,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2721,10 +2722,10 @@
     "demand_after": 203.3,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.45,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2735,10 +2736,10 @@
     "demand_after": 417.08,
     "waiting_passengers": 20.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.5,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2749,10 +2750,10 @@
     "demand_after": 177.08,
     "waiting_passengers": 8.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.37,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2763,10 +2764,10 @@
     "demand_after": 177.35,
     "waiting_passengers": 8.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.49,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -2777,10 +2778,10 @@
     "demand_after": 276.33,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.3,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2792,11 +2793,11 @@
     "waiting_passengers": 14.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2807,11 +2808,11 @@
     "demand_after": 416.26,
     "waiting_passengers": 20.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2822,11 +2823,11 @@
     "demand_after": 209.82,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.52,
+    "frequency_multiplier": 1.5,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2837,11 +2838,11 @@
     "demand_after": 305.83,
     "waiting_passengers": 15.0,
     "actions": [
-      "No action",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.47,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2852,11 +2853,11 @@
     "demand_after": 185.46,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.34,
+    "frequency_multiplier": 1.49,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2869,7 +2870,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.43,
+    "frequency_multiplier": 1.41,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -2877,15 +2878,15 @@
   },
   {
     "route_id": 298,
-    "demand_after": 177.51,
-    "waiting_passengers": 8.0,
+    "demand_after": 214.32,
+    "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.51,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2896,10 +2897,10 @@
     "demand_after": 292.87,
     "waiting_passengers": 14.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.4,
+    "frequency_multiplier": 1.39,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2910,11 +2911,11 @@
     "demand_after": 178.64,
     "waiting_passengers": 8.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.5,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2926,11 +2927,11 @@
     "waiting_passengers": 20.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.49,
+    "frequency_multiplier": 1.23,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2942,13 +2943,13 @@
     "waiting_passengers": 15.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
-    "rerouted_to": 351,
+    "rerouted_to": 189,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -2957,10 +2958,10 @@
     "demand_after": 366.93,
     "waiting_passengers": 18.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.52,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -2972,13 +2973,13 @@
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.6,
     "buses_added": 2,
-    "rerouted_to": 189,
+    "rerouted_to": 2,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -2988,12 +2989,12 @@
     "waiting_passengers": 14.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.52,
     "buses_added": 2,
-    "rerouted_to": 5,
+    "rerouted_to": 7,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -3003,12 +3004,12 @@
     "waiting_passengers": 18.0,
     "actions": [
       "Increase Frequency",
-      "No action",
-      "High Demand Risk",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3019,11 +3020,11 @@
     "demand_after": 208.58,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.59,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3034,10 +3035,10 @@
     "demand_after": 328.93,
     "waiting_passengers": 16.0,
     "actions": [
-      "No action",
-      "Investigate Anomaly"
+      "Investigate Anomaly",
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.54,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -3048,10 +3049,10 @@
     "demand_after": 347.47,
     "waiting_passengers": 17.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.22,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3062,11 +3063,11 @@
     "demand_after": 199.91,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.46,
+    "frequency_multiplier": 1.29,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3077,11 +3078,11 @@
     "demand_after": 201.0,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.33,
+    "frequency_multiplier": 1.41,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3093,11 +3094,11 @@
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.6,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3108,11 +3109,11 @@
     "demand_after": 200.3,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.36,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3123,10 +3124,10 @@
     "demand_after": 231.25,
     "waiting_passengers": 11.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.35,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3138,13 +3139,13 @@
     "waiting_passengers": 8.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.39,
     "buses_added": 2,
-    "rerouted_to": 115,
+    "rerouted_to": 217,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -3153,10 +3154,10 @@
     "demand_after": 270.53,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.39,
+    "frequency_multiplier": 1.5,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3167,10 +3168,10 @@
     "demand_after": 293.67,
     "waiting_passengers": 14.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.33,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3182,10 +3183,10 @@
     "waiting_passengers": 16.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.46,
+    "frequency_multiplier": 1.35,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3196,11 +3197,11 @@
     "demand_after": 366.95,
     "waiting_passengers": 18.0,
     "actions": [
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.43,
     "buses_added": 3,
     "rerouted_to": null,
     "anomaly": false,
@@ -3211,10 +3212,10 @@
     "demand_after": 409.67,
     "waiting_passengers": 20.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.32,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3225,10 +3226,10 @@
     "demand_after": 187.34,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.24,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3239,10 +3240,10 @@
     "demand_after": 189.29,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.46,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3253,10 +3254,10 @@
     "demand_after": 183.93,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.4,
+    "frequency_multiplier": 1.43,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3268,10 +3269,10 @@
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.54,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3283,12 +3284,12 @@
     "waiting_passengers": 19.0,
     "actions": [
       "Increase Frequency",
-      "High Demand Risk",
-      "No action",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.5,
+    "frequency_multiplier": 1.38,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3300,9 +3301,9 @@
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
     "frequency_multiplier": 1.57,
     "buses_added": 2,
@@ -3315,12 +3316,12 @@
     "demand_after": 189.16,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.48,
+    "frequency_multiplier": 1.13,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3331,11 +3332,11 @@
     "demand_after": 207.27,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "No action"
     ],
-    "frequency_multiplier": 1.51,
+    "frequency_multiplier": 1.31,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3347,11 +3348,11 @@
     "waiting_passengers": 15.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3362,12 +3363,12 @@
     "demand_after": 251.05,
     "waiting_passengers": 12.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.38,
+    "frequency_multiplier": 1.44,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3378,10 +3379,10 @@
     "demand_after": 272.76,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.49,
+    "frequency_multiplier": 1.55,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3392,10 +3393,10 @@
     "demand_after": 198.41,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.34,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3407,11 +3408,11 @@
     "waiting_passengers": 9.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.54,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3422,10 +3423,10 @@
     "demand_after": 197.11,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3436,10 +3437,10 @@
     "demand_after": 198.63,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.49,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3451,11 +3452,11 @@
     "waiting_passengers": 11.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.43,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3466,12 +3467,12 @@
     "demand_after": 247.12,
     "waiting_passengers": 12.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.41,
+    "frequency_multiplier": 1.53,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3485,7 +3486,7 @@
       "High Demand Risk",
       "Allocate Extra Bus"
     ],
-    "frequency_multiplier": 1.3,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3496,11 +3497,11 @@
     "demand_after": 363.27,
     "waiting_passengers": 18.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.48,
+    "frequency_multiplier": 1.53,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3508,14 +3509,14 @@
   },
   {
     "route_id": 342,
-    "demand_after": 178.64,
-    "waiting_passengers": 8.0,
+    "demand_after": 212.91,
+    "waiting_passengers": 10.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3527,11 +3528,11 @@
     "waiting_passengers": 8.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Investigate Anomaly",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.51,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3539,14 +3540,14 @@
   },
   {
     "route_id": 344,
-    "demand_after": 204.53,
-    "waiting_passengers": 10.0,
+    "demand_after": 177.46,
+    "waiting_passengers": 8.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.41,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3559,7 +3560,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.59,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -3572,7 +3573,7 @@
     "actions": [
       "No action"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3584,12 +3585,12 @@
     "waiting_passengers": 10.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.52,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
-    "rerouted_to": 255,
+    "rerouted_to": 115,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -3598,11 +3599,11 @@
     "demand_after": 352.23,
     "waiting_passengers": 17.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.48,
+    "frequency_multiplier": 1.47,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3613,12 +3614,12 @@
     "demand_after": 175.55,
     "waiting_passengers": 8.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.47,
+    "frequency_multiplier": 1.5,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3626,15 +3627,15 @@
   },
   {
     "route_id": 351,
-    "demand_after": 228.61,
-    "waiting_passengers": 11.0,
+    "demand_after": 175.56,
+    "waiting_passengers": 8.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.49,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3646,11 +3647,11 @@
     "waiting_passengers": 8.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.49,
+    "frequency_multiplier": 1.32,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3658,14 +3659,14 @@
   },
   {
     "route_id": 355,
-    "demand_after": 227.84,
-    "waiting_passengers": 11.0,
+    "demand_after": 175.55,
+    "waiting_passengers": 8.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.56,
+    "frequency_multiplier": 1.42,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3676,10 +3677,10 @@
     "demand_after": 209.34,
     "waiting_passengers": 10.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.4,
+    "frequency_multiplier": 1.57,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3691,10 +3692,10 @@
     "waiting_passengers": 11.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.55,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3706,11 +3707,11 @@
     "waiting_passengers": 12.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.1,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3722,13 +3723,13 @@
     "waiting_passengers": 14.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.47,
     "buses_added": 2,
-    "rerouted_to": 355,
+    "rerouted_to": 187,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -3738,11 +3739,11 @@
     "waiting_passengers": 13.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.58,
+    "frequency_multiplier": 1.49,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3754,12 +3755,12 @@
     "waiting_passengers": 16.0,
     "actions": [
       "Increase Frequency",
-      "High Demand Risk",
-      "No action",
       "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "High Demand Risk",
+      "Allocate Extra Bus",
+      "No action"
     ],
-    "frequency_multiplier": 1.46,
+    "frequency_multiplier": 1.47,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3771,10 +3772,10 @@
     "waiting_passengers": 16.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.6,
+    "frequency_multiplier": 1.5,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3785,10 +3786,10 @@
     "demand_after": 261.69,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
-      "Increase Frequency"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.45,
+    "frequency_multiplier": 1.54,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3799,11 +3800,11 @@
     "demand_after": 278.45,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.51,
+    "frequency_multiplier": 1.58,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3815,11 +3816,11 @@
     "waiting_passengers": 12.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.52,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3831,10 +3832,10 @@
     "waiting_passengers": 10.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.18,
+    "frequency_multiplier": 1.47,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3846,12 +3847,12 @@
     "waiting_passengers": 18.0,
     "actions": [
       "High Demand Risk",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.57,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
-    "rerouted_to": 187,
+    "rerouted_to": 132,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -3861,10 +3862,10 @@
     "waiting_passengers": 22.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.53,
+    "frequency_multiplier": 1.4,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3875,12 +3876,12 @@
     "demand_after": 198.36,
     "waiting_passengers": 9.0,
     "actions": [
-      "No action",
-      "Increase Frequency",
+      "High Demand Risk",
       "Allocate Extra Bus",
-      "High Demand Risk"
+      "Increase Frequency",
+      "No action"
     ],
-    "frequency_multiplier": 1.59,
+    "frequency_multiplier": 1.46,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3891,11 +3892,11 @@
     "demand_after": 225.37,
     "waiting_passengers": 11.0,
     "actions": [
-      "No action",
       "Increase Frequency",
-      "Investigate Anomaly"
+      "Investigate Anomaly",
+      "No action"
     ],
-    "frequency_multiplier": 1.38,
+    "frequency_multiplier": 1.42,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3907,13 +3908,13 @@
     "waiting_passengers": 10.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "Investigate Anomaly",
-      "Allocate Extra Bus"
+      "Investigate Anomaly"
     ],
     "frequency_multiplier": 1.59,
     "buses_added": 2,
-    "rerouted_to": 108,
+    "rerouted_to": 298,
     "anomaly": false,
     "high_uncertainty": true
   },
@@ -3922,8 +3923,8 @@
     "demand_after": 265.55,
     "waiting_passengers": 13.0,
     "actions": [
-      "No action",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "No action"
     ],
     "frequency_multiplier": 1.49,
     "buses_added": 2,
@@ -3937,11 +3938,11 @@
     "waiting_passengers": 14.0,
     "actions": [
       "High Demand Risk",
+      "Allocate Extra Bus",
       "Increase Frequency",
-      "No action",
-      "Allocate Extra Bus"
+      "No action"
     ],
-    "frequency_multiplier": 1.46,
+    "frequency_multiplier": 1.56,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3953,10 +3954,10 @@
     "waiting_passengers": 15.0,
     "actions": [
       "High Demand Risk",
-      "Increase Frequency",
-      "Allocate Extra Bus"
+      "Allocate Extra Bus",
+      "Increase Frequency"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.39,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,
@@ -3969,7 +3970,7 @@
     "actions": [
       "Investigate Anomaly"
     ],
-    "frequency_multiplier": 1.46,
+    "frequency_multiplier": 1.54,
     "buses_added": 1,
     "rerouted_to": null,
     "anomaly": false,
@@ -3980,11 +3981,11 @@
     "demand_after": 221.2,
     "waiting_passengers": 11.0,
     "actions": [
-      "No action",
       "Increase Frequency",
-      "Investigate Anomaly"
+      "Investigate Anomaly",
+      "No action"
     ],
-    "frequency_multiplier": 1.54,
+    "frequency_multiplier": 1.36,
     "buses_added": 2,
     "rerouted_to": null,
     "anomaly": false,

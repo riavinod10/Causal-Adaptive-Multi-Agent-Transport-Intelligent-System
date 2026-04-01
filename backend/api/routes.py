@@ -80,10 +80,16 @@ async def get_route_detail(route_id: str):
 async def run_optimization():
     """
     Run your existing CAMATIS pipeline inference
-    This calls run_agents_pipeline.py which does inference, not training
     """
+    import traceback
+    print("\n" + "="*70)
+    print("[API] /optimize endpoint called")
+    print("="*70)
+    
     try:
+        print("[API] Calling pipeline_service.run_inference()...")
         result = pipeline_service.run_inference()
+        print(f"[API] Pipeline result: {result}")
         
         # Get summary from fresh results
         dashboard = data_service.get_dashboard_data()
@@ -103,9 +109,11 @@ async def run_optimization():
         )
         
     except Exception as e:
+        error_details = traceback.format_exc()
+        print(f"[API ERROR] {error_details}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Pipeline execution failed: {str(e)}"
+            detail=f"Pipeline execution failed: {str(e)}\n{error_details}"
         )
 
 @router.get("/results", response_model=List[OptimizationResult])
@@ -137,4 +145,41 @@ async def health_check():
         "status": "healthy",
         "output_file_exists": os.path.exists(OUTPUT_FILE),
         "timestamp": datetime.now().isoformat()
+    }
+
+from backend.services.config_service import config_service
+from pydantic import BaseModel
+
+class SettingsUpdate(BaseModel):
+    max_buses: int = None
+    frequency_limit: int = None
+    optimization_preference: str = None
+
+@router.get("/settings")
+async def get_settings():
+    config = config_service.get_config()
+    return {
+        "maxBuses": config.max_buses,
+        "frequencyLimit": config.frequency_limit,
+        "optimizationPreference": config.optimization_preference
+    }
+
+@router.post("/settings")
+async def update_settings(settings: SettingsUpdate):
+    updates = {}
+    if settings.max_buses is not None:
+        updates["max_buses"] = settings.max_buses
+    if settings.frequency_limit is not None:
+        updates["frequency_limit"] = settings.frequency_limit
+    if settings.optimization_preference is not None:
+        updates["optimization_preference"] = settings.optimization_preference
+    
+    new_config = config_service.update_config(updates)
+    return {
+        "success": True,
+        "settings": {
+            "maxBuses": new_config.max_buses,
+            "frequencyLimit": new_config.frequency_limit,
+            "optimizationPreference": new_config.optimization_preference
+        }
     }

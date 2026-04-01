@@ -1,10 +1,16 @@
 """
-Stage 7: Scenario Simulation Engine - DYNAMIC VERSION
+Stage 7: Scenario Simulation Engine - DYNAMIC VERSION with Settings
 """
 
 import numpy as np
 from typing import Dict, List, Any
 from dataclasses import dataclass, field
+import sys
+import os
+
+# Add parent directory to path to import backend config
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from backend.services.config_service import config_service
 
 @dataclass
 class RouteState:
@@ -34,6 +40,20 @@ class TransportSimulation:
         self.route_states: Dict[int, RouteState] = {}
         self.demand_shifts: List[Dict] = []
         self.BUS_CAPACITY = 50
+        
+        # Load settings from config service
+        try:
+            config = config_service.get_config()
+            self.frequency_limit = config.frequency_limit
+            self.max_buses = config.max_buses
+            # Also set freq_limit for compatibility with existing code
+            self.freq_limit = self.frequency_limit
+            print(f"[SIMULATION] Settings loaded: freq_limit={self.frequency_limit}, max_buses={self.max_buses}")
+        except Exception as e:
+            self.frequency_limit = 12
+            self.freq_limit = 12
+            self.max_buses = 30
+            print(f"[SIMULATION] Using defaults: freq_limit={self.frequency_limit}, max_buses={self.max_buses}")
         
     def setup_initial_state(self):
         """Initialize state before any decisions"""
@@ -71,12 +91,13 @@ class TransportSimulation:
         print(f"... and {len(self.route_states) - 20} more routes")
     
     def apply_frequency_decisions(self):
-        """Apply frequency multiplier decisions"""
+        """Apply frequency multiplier decisions WITH LIMIT"""
         print("\n" + "="*70)
         print(" APPLYING FREQUENCY DECISIONS")
         print("="*70)
         
         freq_changes = []
+        base_freq = 4.0
         
         for route_id, plan in self.optimized_actions.items():
             if route_id not in self.route_states:
@@ -85,32 +106,38 @@ class TransportSimulation:
             multiplier = plan.get("frequency_multiplier", 1.0)
             if multiplier != 1.0:
                 old_freq = self.route_states[route_id].current_frequency
-                new_freq = old_freq * multiplier
+                # Apply frequency limit from settings - use freq_limit (exists now)
+                new_freq = min(old_freq * multiplier, self.freq_limit)
                 self.route_states[route_id].current_frequency = new_freq
                 freq_changes.append({
                     "route": route_id,
                     "old_freq": old_freq,
                     "new_freq": new_freq,
-                    "multiplier": multiplier
+                    "multiplier": multiplier,
+                    "capped": new_freq < old_freq * multiplier
                 })
         
         if freq_changes:
-            print(f"\n{'Route':<8} {'Old Freq':<10} {'New Freq':<10} {'Multiplier':<10}")
-            print("-" * 45)
+            print(f"\n{'Route':<8} {'Old Freq':<10} {'New Freq':<10} {'Multiplier':<10} {'Capped':<8}")
+            print("-" * 55)
             for change in freq_changes[:15]:
-                print(f"{change['route']:<8} {change['old_freq']:<10.1f} {change['new_freq']:<10.1f} {change['multiplier']:<10.2f}x")
+                capped_flag = "✓" if change['capped'] else ""
+                print(f"{change['route']:<8} {change['old_freq']:<10.1f} {change['new_freq']:<10.1f} "
+                      f"{change['multiplier']:<10.2f}x {capped_flag:<8}")
             if len(freq_changes) > 15:
                 print(f"... and {len(freq_changes) - 15} more routes")
+            print(f"\n[LIMIT] Frequency capped at {self.frequency_limit} buses/hour")
         else:
             print("  No frequency changes applied")
     
     def apply_bus_allocation_decisions(self):
-        """Apply bus allocation decisions"""
+        """Apply bus allocation decisions WITH MAX BUSES LIMIT"""
         print("\n" + "="*70)
         print(" APPLYING BUS ALLOCATION DECISIONS")
         print("="*70)
         
         bus_changes = []
+        capped_count = 0  # ← FIX: Add this line
         
         for route_id, plan in self.optimized_actions.items():
             if route_id not in self.route_states:
@@ -119,24 +146,36 @@ class TransportSimulation:
             buses_to_add = plan.get("buses_to_add", 0)
             if buses_to_add > 0:
                 old_buses = self.route_states[route_id].current_buses
-                new_buses = old_buses + buses_to_add
+                # Apply max buses limit from settings
+                new_buses = min(old_buses + buses_to_add, self.max_buses)
+                actual_added = new_buses - old_buses
+                
+                if actual_added < buses_to_add:
+                    capped_count += 1
+                
                 self.route_states[route_id].current_buses = new_buses
                 bus_changes.append({
                     "route": route_id,
                     "old_buses": old_buses,
                     "new_buses": new_buses,
-                    "added": buses_to_add
+                    "requested": buses_to_add,
+                    "added": actual_added
                 })
         
         if bus_changes:
-            print(f"\n{'Route':<8} {'Old Buses':<10} {'New Buses':<10} {'Added':<8}")
-            print("-" * 45)
+            print(f"\n{'Route':<8} {'Old Buses':<10} {'New Buses':<10} {'Requested':<10} {'Added':<8}")
+            print("-" * 55)
             for change in bus_changes[:15]:
-                print(f"{change['route']:<8} {change['old_buses']:<10} {change['new_buses']:<10} +{change['added']:<7}")
+                print(f"{change['route']:<8} {change['old_buses']:<10} {change['new_buses']:<10} "
+                      f"+{change['requested']:<9} +{change['added']:<7}")
             if len(bus_changes) > 15:
                 print(f"... and {len(bus_changes) - 15} more routes")
+            
+            if capped_count > 0:
+                print(f"\n[LIMIT] {capped_count} routes hit max_buses limit of {self.max_buses}")
         else:
             print("  No bus allocation changes")
+    
     
     def apply_rerouting_decisions(self):
         """
@@ -187,6 +226,11 @@ class TransportSimulation:
             
             if target_load > 0.75:
                 print(f"  ⚠️ Target {best_target} at {target_load:.1%} load, skipping")
+                continue
+            
+            # Check if source has enough buses to give away
+            if source_state.current_buses <= 1:
+                print(f"  ⚠️ Route {from_route} only has {source_state.current_buses} bus, cannot reroute")
                 continue
             
             # Move 1 bus
